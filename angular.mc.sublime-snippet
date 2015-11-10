@@ -1,0 +1,64 @@
+<snippet>
+    <content><![CDATA[
+
+  ng
+    .module("${1:module}"${2:, [${3:dependencies}]})
+    .config(${4:router})
+    .controller(${5:controller})
+
+  /////////////////////////////////////
+  // Router rules                    //
+  /////////////////////////////////////
+
+  function ${4:router}($urlRouterProvider, $stateProvider) {
+    var _router = {
+      url: '${6:/}',
+      template${7:Url}: '${8:template_path}',
+      controller: ${5:controller}
+    }
+
+    $stateProvider.state(_router)
+  } //-- ${4:router}()
+
+  /////////////////////////////////////
+  // Controller functions            //
+  /////////////////////////////////////
+
+  ${5:controller}.$inject = ['\$scope']
+
+  function ${5:controller}(\$scope) {
+    initialize()
+
+    ///////////////////////////////////
+    // Initialization                //
+    ///////////////////////////////////
+
+    function initialize() {
+      $0
+    }
+
+    ///////////////////////////////////
+    // Scope Methods                 //
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    // Event handlers                //
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    // Private functions             //
+    ///////////////////////////////////
+
+
+  } //-- end ${5:controller}()
+
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ngmc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Angular module and controller</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+
++function (window, ng) {
+  'use strict';
+  $0
+} (window, angular);
+
+
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ng</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+    <description>Angular code frame</description>
+</snippet>
