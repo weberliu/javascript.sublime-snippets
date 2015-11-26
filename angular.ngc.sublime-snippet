@@ -1,0 +1,42 @@
+<snippet>
+        <content><![CDATA[
+
+
+${1:controller}.\$inject = ['\$scope']
+
+function ${1:controller}(\$scope) {
+    initialize()
+
+    ///////////////////////////////////
+    // Initialization                //
+    ///////////////////////////////////
+
+    function initialize() {
+        $0
+    }
+
+    ///////////////////////////////////
+    // Scope methods                 //
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    // Event handlers                //
+    ///////////////////////////////////
+
+
+    ///////////////////////////////////
+    // Private functions             //
+    ///////////////////////////////////
+
+
+} //-- end ${1:controller}()
+
+
+]]></content>
+        <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+        <tabTrigger>ngc</tabTrigger>
+        <!-- Optional: Set a scope to limit where the snippet will trigger -->
+        <scope>source.js</scope>
+        <description>Angular controller function</description>
+</snippet>
