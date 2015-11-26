@@ -1,0 +1,55 @@
+<snippet>
+		<content><![CDATA[
+
+ng
+	.module('${1:module}'${2:, [${3:dependencies}]})
+	.directive('${4:directive}', ${4:directive})
+
+/////////////////////////////////////
+// Directive function              //
+/////////////////////////////////////
+
+/* @ngInject */
+function ${4:directive}() {
+	var directive = {
+		restrict: '${5:EAC}',
+		templateUrl: '${6:templateUrl}',
+		scope: {
+		},
+		link: linkFunc,
+		controller: ${7:Controller},
+		controllerAs: 'vm',
+		bindToController: true
+	}
+
+	return directive
+
+	function linkFunc(\$scope, elem, attrs, ctrl) {
+
+	}
+}
+
+/////////////////////////////////////
+// Controller function             //
+/////////////////////////////////////
+
+${7:Controller}.$inject = ['${8:dependencies}']
+
+/* @ngInject */
+function ${7:Controller}(${8:dependencies}) {
+	var vm = this
+
+	activate()
+
+	function activate() {
+
+	}
+}
+
+]]></content>
+		<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+		<tabTrigger>ngmd</tabTrigger>
+		<!-- Optional: Set a scope to limit where the snippet will trigger -->
+		<scope>source.js</scope>
+		<description>Angular module and directive</description>
+</snippet>
